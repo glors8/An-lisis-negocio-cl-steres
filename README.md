@@ -1,24 +1,96 @@
-# Analisis-negocio-clusteres
+# 🎟️ Marketing Analysis– Business Intelligence Project
 
-📊 Proyecto de Análisis de Marketing para Showz
-Este proyecto forma parte del Sprint 9 del programa de análisis de datos de TripleTen. El objetivo principal es optimizar los gastos de marketing de Showz, una empresa dedicada a la venta de entradas para eventos, mediante el análisis de datos reales.
+## 📁 Project Summary
 
-🎯 Objetivo del Proyecto
-Utilizando datos históricos de visitas al sitio web, pedidos y gastos de marketing, se busca:
+In this bootcampo project, the company **Showz**, a ticketing company, wants to optimize **marketing spend** using user activity, purchase, and advertising data.
 
-Analizar el comportamiento de los usuarios en la plataforma.
+The goal is to understand how users interact with the platform, identify when they convert, how much revenue they generate, and how long it takes to recover customer acquisition costs.
 
-Determinar cuándo los usuarios comienzan a comprar.
+---
 
-Calcular métricas clave como LTV (Lifetime Value), CAC (Costo de Adquisición de Clientes) y ROMI (Retorno sobre Inversión en Marketing).
+## 🎯 Objectives
 
-Evaluar la efectividad de diferentes fuentes de adquisición y dispositivos.
+- Analyze customer behavior across sessions, purchases, and devices
+- Evaluate marketing costs, acquisition efficiency, and ROI
+- Support decision-making on marketing investments with data
 
-Recomendar estrategias de inversión en marketing más eficientes.
+---
 
-🔍Se elaboró un informe con recomendaciones para el equipo de marketing de Showz, basado en datos cuantitativos. Se sugieren las fuentes de adquisición más rentables, así como plataformas y dispositivos con mejor desempeño, para mejorar la eficiencia de la inversión publicitaria.
+## 📊 Key Analysis Areas
 
-🛠 Herramientas
-Python (pandas, numpy, matplotlib, seaborn)
+### 1. User Engagement (Visits)
 
-Jupyter Notebook
+- Daily, weekly, monthly active users
+- Session count per user and session duration
+- User retention and return frequency
+
+### 2. Conversion & Revenue (Orders)
+
+- Time between first visit and first purchase (conversion delay)
+- Purchase frequency over time
+- Average purchase value and total user revenue (LTV)
+
+### 3. Marketing Performance (Costs)
+
+- Total and per-channel ad spend
+- Customer acquisition cost (CAC) by source
+- Return on Marketing Investment (ROMI)
+
+---
+
+## 📌 Dataset Overview
+
+### `visits_log_us.csv`
+- `uid`: User ID  
+- `device`: User device  
+- `start_ts`, `end_ts`: Session timestamps  
+- `source_id`: Advertising source ID
+
+### `orders_log_us.csv`
+- `uid`: User ID  
+- `buy_ts`: Purchase timestamp  
+- `revenue`: Order revenue
+
+### `costs_us.csv`
+- `source_id`: Ad source ID  
+- `dt`: Date  
+- `costs`: Daily ad spend per source
+
+---
+
+## 📈 Approach
+
+1. **Data Preparation**  
+   - Import CSV files  
+   - Clean and convert data types  
+   - Merge datasets for unified analysis  
+
+2. **Metric Calculations**  
+   - User activity and session trends  
+   - Conversion delays by cohorts  
+   - LTV, CAC, ROMI across sources/devices  
+
+3. **Visualization & Insight Generation**  
+   - Time series and bar charts for comparisons  
+   - Identify top-performing acquisition sources  
+   - Evaluate marketing return over time  
+
+---
+
+## ✅ Outcome
+
+This project aims to answer:
+- Which marketing channels are most effective?
+- When do users convert, and how valuable are they over time?
+- How soon do marketing investments pay off?
+- Provide **actionable recommendations** on where and how much to invest in user acquisition.
+
+---
+
+## 🧠 Tools Used
+
+- Python (pandas, matplotlib, seaborn)
+- Jupyter Notebook
+- Metrics: LTV, CAC, ROMI, Conversion Delay
+
+
